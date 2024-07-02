@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTask } from '../redux/tasksSlice';
+import style from './style.module.css';
 
 const TaskInput = () => {
   const [task, setTask] = useState('');
@@ -17,12 +18,13 @@ const TaskInput = () => {
   return (
     <form onSubmit={handleSubmit}>
       <input
+        className={style.inputBox}
         type="text"
         value={task}
         onChange={(e) => setTask(e.target.value)}
         placeholder="Add a new task"
       />
-      <button type="submit">Add Task</button>
+      <button className={style.addButton} type="submit">Add</button>
     </form>
   );
 };
