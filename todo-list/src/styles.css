@@ -1,0 +1,33 @@
+.App {
+    text-align: center;
+  }
+  body{
+    background-color: #0000;
+    font-family: Lato;
+  }
+  
+  form {
+    margin: 20px 0;
+  }
+  
+  input {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+ 
+  
+  li span {
+    cursor: pointer;
+    flex: 1;
+  }
+  
